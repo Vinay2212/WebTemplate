@@ -1,0 +1,184 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.row::after{
+    content:"";
+    clear:both;
+    display: block;
+}
+[class*="col-"]
+{
+    float:left;
+    padding: 10px;
+}
+.col-1{width: 8.33%;}
+.col-2{width: 16.66%;}
+.col-3{width: 25%;}
+.col-4{width: 33.33%;}
+.col-5{width: 41.66%;}
+.col-6{width: 50%;}
+.col-7{width: 58.33%;}
+.col-8{width: 66.66%;}
+.col-9{width: 75%;}
+.col-10{width: 83.33%;}
+.col-11{width: 91.66%;}
+.col-12{width: 100%;}
+
+.timeandfaq
+{
+    background-color: black;
+}
+.time
+{
+color:red;
+text-align: center;
+}
+
+.regi button
+{
+    background-color: crimson;
+    border: none;
+    padding: 10px 15px 10px 15px;
+    float: right;
+}
+.menu
+{
+    margin-top: 15px;
+    position: relative;
+}
+.menu a
+{
+color: rgb(0, 0, 0);
+text-decoration: none;
+padding: 10px 15px 10px 15px;
+}
+.menu a:hover
+{
+background-color: blueviolet;
+color:white;
+}
+
+.active
+{
+    background-color: blueviolet;
+    color:white; 
+}
+.logoandmenu
+{
+    background-color: rgb(5, 110, 79);
+    position: relative;
+    width: 100%;
+    
+}
+.rslides {
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    }
+  
+  .rslides li {
+    -webkit-backface-visibility: hidden;
+    position: absolute;
+    display: none;
+    width: 100%;
+    left: 0;
+    top: 0;
+    }
+  
+  .rslides li:first-child {
+    position: relative;
+    display: block;
+    float: left;
+    }
+  
+  .rslides img {
+    display: block;
+    height: auto;
+    float: left;
+    width: 100%;
+    border: 0;
+    }
+
+.producttxt
+{
+    text-align: center;
+}
+.producttxt button
+{
+    background-color: crimson;
+    padding: 10px 15px 10px 15px;
+    border:none;
+    font-size: 20px;
+}
+.sticky{
+    position: fixed;
+    top: 0px;
+    z-index: 3;
+}
+#mybutton
+{   
+    display: none;
+    position: fixed;
+    border: none;
+    background-color: rgb(84, 157, 221);
+    padding: 15px;
+    color: black;
+    z-index:99;
+    bottom: 20px;
+    right:30px;
+    outline: none;  
+}
+#wholepage
+{
+    display:none;
+    text-align:center;
+}
+#loader
+{
+    width:150px;
+    height:150px;
+    border:16px solid black;
+    border-radius: 50%;
+    position:absolute;
+    left:50%;
+    top:40%; 
+    border-top: 16px solid red; 
+    width: 120px;
+    height:120px; 
+    margin:-75px 0 0 -75px;
+    -webkit-animation: 2s linear infinite;
+    animation:spin 2s linear infinite;
+}
+@-webkit-keyframes spin{
+0%{-webkit-transform: rotate(0deg);}
+100%{-webkit-transform: rotate(360deg);}
+}
+@keyframes spin
+{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);} 
+}
+.animatewholepage
+{
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s;
+}
+@-webkit-keyframes animatebottom{
+    from{bottom:100px; opacity: 0}
+    to{bottom:0; opacity: 1;}
+}
+@keyframes animatebottom{
+    from{bottom:100px; opacity: 0}
+    to{bottom:0; opacity: 1;}
+}
